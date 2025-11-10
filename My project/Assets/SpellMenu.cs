@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class SpellMenu : MonoBehaviour
 {
-    public bool open = false;
-    public GameObject PanelThing;
-
+    private bool open = false;
+    public GameObject MenuPanel;
 
     public void slotOne()
     {
-        if (open == true)
+        if (open == false)
         {
-            PanelThing.SetActive(false);
-            open = false;
+            MenuPanel.SetActive(true);
+            open = true;
         }
         else
         {
-            PanelThing.SetActive(true);
-            open = true;
+            MenuPanel.SetActive(false);
+            open = false;
         }
     }
 }
