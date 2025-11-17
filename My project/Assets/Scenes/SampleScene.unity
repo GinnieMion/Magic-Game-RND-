@@ -10450,35 +10450,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -3.5724425
+        z: -5.1487217
       TangentOut:
         x: 0
         y: 0
-        z: 3.6731203
+        z: 11.975535
       Rotation:
         value:
-          x: 0
-          y: 0.90482724
-          z: 0
-          w: -0.425779
+          x: 0.0039941412
+          y: 0.818467
+          z: 0.0056840535
+          w: -0.57451147
     - Position:
-        x: 3.679688
-        y: 0
-        z: -55.079712
+        x: -47.01758
+        y: 1.6601562
+        z: -62.98456
       TangentIn:
         x: -0
         y: -0
-        z: -1.1688638
+        z: -5.981569
       TangentOut:
         x: 0
         y: 0
-        z: 1.1688638
+        z: 5.981569
       Rotation:
         value:
-          x: 0
-          y: 0.9579596
-          z: 0
-          w: -0.2869032
+          x: 0.008248272
+          y: 0.80475414
+          z: 0.011161621
+          w: -0.593446
     m_MetaData:
     - Mode: 0
       Tension: 0.5
@@ -23023,6 +23023,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1484103574825319564, guid: c82236c16aae9d34fbd437f8dea6e2c9, type: 3}
+      propertyPath: heightOffset
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 9156347144040445544, guid: c82236c16aae9d34fbd437f8dea6e2c9, type: 3}
       propertyPath: woodsteps
       value: 
