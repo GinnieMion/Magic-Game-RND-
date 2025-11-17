@@ -39,6 +39,7 @@ public class RailScript : MonoBehaviour
         float angle = Vector3.Angle(railForward, playerForward.normalized);
         if (angle > 90f)
             direction = false;
-        else direction = true;
+        else 
+            direction = true;
     }
 }
