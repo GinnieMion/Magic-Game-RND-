@@ -12,7 +12,7 @@ public class MenuKeybindE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             Debug.Log("You went to the Spell Menu");
             SceneManager.LoadScene("SpellInterface");
