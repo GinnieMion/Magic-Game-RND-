@@ -3399,7 +3399,7 @@ GameObject:
   - component: {fileID: 267398349}
   - component: {fileID: 267398348}
   m_Layer: 0
-  m_Name: Cube (23)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4933,7 +4933,7 @@ GameObject:
   - component: {fileID: 368750449}
   - component: {fileID: 368750448}
   m_Layer: 0
-  m_Name: Cube (25)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9034,7 +9034,7 @@ GameObject:
   - component: {fileID: 626166673}
   - component: {fileID: 626166672}
   m_Layer: 0
-  m_Name: Cube (19)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9881,7 +9881,7 @@ GameObject:
   - component: {fileID: 734690379}
   - component: {fileID: 734690378}
   m_Layer: 0
-  m_Name: Cube (20)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16312,7 +16312,7 @@ GameObject:
   - component: {fileID: 1259108554}
   - component: {fileID: 1259108553}
   m_Layer: 0
-  m_Name: Cube (24)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17274,7 +17274,7 @@ GameObject:
   - component: {fileID: 1337027471}
   - component: {fileID: 1337027470}
   m_Layer: 0
-  m_Name: Cube (22)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18308,7 +18308,7 @@ GameObject:
   - component: {fileID: 1491267332}
   - component: {fileID: 1491267331}
   m_Layer: 0
-  m_Name: Cube (26)
+  m_Name: shelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
