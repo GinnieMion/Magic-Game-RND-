@@ -2,16 +2,9 @@ using UnityEngine;
 
 public class NewSpell : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    string spellone = "Fireballuh";
+    string spelltwo = "Wateruh";
+    string spellthree = "Winduh";
+    string spellfour = "Rockuh";
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
-
