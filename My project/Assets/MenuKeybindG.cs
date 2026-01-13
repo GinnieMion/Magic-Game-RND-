@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class MenuKeybindE : MonoBehaviour
+public class MenuKeybindG : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
         public GameObject MenuPanel;
@@ -23,7 +23,7 @@ public class MenuKeybindE : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             SpellMenu.SetActive(true);
 

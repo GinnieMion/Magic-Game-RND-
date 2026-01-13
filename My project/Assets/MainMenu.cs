@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
+    // I decided to keep many of these debug logs to show how I kept error-checking and fine-tuning for any bugs.
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("Getting M key");
             SceneManager.LoadScene("MenuScene");
-            // WHY YOU NO WORK?? 
+            // WHY YOU NO WORK?? edit -- nvm it works
             Debug.Log("Successful.");
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
