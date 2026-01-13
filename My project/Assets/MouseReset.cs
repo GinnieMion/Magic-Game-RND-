@@ -9,9 +9,5 @@ public class MouseReset : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+// nothing else here, just unlocking the mouse!! ^^
