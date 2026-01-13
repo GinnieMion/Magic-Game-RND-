@@ -10,8 +10,12 @@ public class MainMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
+            Debug.Log("Getting M key");
             SceneManager.LoadScene("MenuScene");
-            Debug.Log("Successful");
+            // WHY YOU NO WORK?? 
+            Debug.Log("Successful.");
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
