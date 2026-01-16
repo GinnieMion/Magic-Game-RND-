@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class MenuKeybindG : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-        public GameObject MenuPanel;
-        public GameObject SpellMenu;
-        public GameObject SpellPanel;
-        bool openpanel = false;
+    public GameObject MenuPanel;
+    public GameObject SpellMenu;
+    public GameObject SpellPanel;
+    bool openpanel = false;
     // MenuPanel is for the External menu/canvas. The main hotbar in game
     // OpenPanel checks if the panel is open or not
     // SpellMenu is for the actual spellmenu
@@ -42,12 +42,18 @@ public class MenuKeybindG : MonoBehaviour
             else
             {
                 Debug.Log("You left the Spell Menu");
-                MenuPanel.SetActive(true);
-                openpanel = false;
-                SpellMenu.SetActive(false);
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-            }
+                goBack();
             }
         }
     }
+        public void goBack()
+        {
+        MenuPanel.SetActive(true);
+        openpanel = false;
+        SpellMenu.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
+
+        }
+}

@@ -23,7 +23,9 @@ public class NewSpell : MonoBehaviour
     {
         
     }
-    public void slotOne()
+
+    // for one button
+    public void buttonclick()
     {
         Debug.Log("Click recognised.");
         if (opentosee == false)
@@ -37,4 +39,6 @@ public class NewSpell : MonoBehaviour
             opentosee = false;
         }
     }
+
+
 }
