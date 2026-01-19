@@ -9,6 +9,7 @@ public class MenuKeybindG : MonoBehaviour
     public GameObject MenuPanel;
     public GameObject SpellMenu;
     public GameObject SpellPanel;
+    public GameObject Wand;
     bool openpanel = false;
     // MenuPanel is for the External menu/canvas. The main hotbar in game
     // OpenPanel checks if the panel is open or not
@@ -17,6 +18,7 @@ public class MenuKeybindG : MonoBehaviour
     {
         MenuPanel.SetActive(true);
         SpellMenu.SetActive(false);
+        Wand.SetActive(true);
     }
     // why does the panel keep glitchign what
     // Update is called once per frame
@@ -35,6 +37,7 @@ public class MenuKeybindG : MonoBehaviour
                 // affects the visibility of the panel, true means shown.
                 openpanel = true;
                 SpellMenu.SetActive(true);
+                Wand.SetActive(false);
 
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
@@ -51,6 +54,7 @@ public class MenuKeybindG : MonoBehaviour
         MenuPanel.SetActive(true);
         openpanel = false;
         SpellMenu.SetActive(false);
+        Wand.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 

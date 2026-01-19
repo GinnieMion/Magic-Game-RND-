@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class HotbarAndHealth : MonoBehaviour
@@ -7,8 +8,11 @@ public class HotbarAndHealth : MonoBehaviour
     public GameObject slotthree;
     public GameObject slotfour;
     public GameObject selector;
+
+    // slots
+
+    public GameObject spell;
     int slot = 0;
-    string thispos = "";
 
 
     public GameObject selector1;
@@ -39,9 +43,9 @@ public class HotbarAndHealth : MonoBehaviour
                 slot = 4;
             }
         }
-            if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if(slot <= 4)
+            if (slot <= 4)
             {
                 slot = slot + 1;
             }
@@ -50,17 +54,13 @@ public class HotbarAndHealth : MonoBehaviour
                 slot = 1;
             }
 
-
-            //thispos = slots[slot];
-            //Debug.Log("Slot position is" + slot);
-            //this.selector.transform.position = thispos.transform.position;
         }
         if (slot == 1)
         {
-                selector1.SetActive(true);
-                selector2.SetActive(false);
-                selector3.SetActive(false);
-                selector4.SetActive(false);
+            selector1.SetActive(true);
+            selector2.SetActive(false);
+            selector3.SetActive(false);
+            selector4.SetActive(false);
 
         }
         if (slot == 2)
@@ -84,8 +84,8 @@ public class HotbarAndHealth : MonoBehaviour
             selector3.SetActive(false);
             selector4.SetActive(true);
         }
-
     }
 }
+    
 
 

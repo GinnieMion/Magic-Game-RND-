@@ -8,5 +8,13 @@ public class Spell : MonoBehaviour
     {
         Destroy(gameObject,life);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag != "Player")
+        {
+            Destroy(gameObject);
+        }
+        
 
+    }
 }
