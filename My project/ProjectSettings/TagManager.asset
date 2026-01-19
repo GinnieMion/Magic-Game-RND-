@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Rail
+  - Spell
+  - Combustible
   layers:
   - Default
   - TransparentFX

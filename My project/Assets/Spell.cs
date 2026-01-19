@@ -2,19 +2,28 @@ using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-    public float life = 3;
+    public float life = 5;
 
     void Awake()
     {
         Destroy(gameObject,life);
+     
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag != "Player")
+        GameObject obj = GameObject.FindWithTag("Combustible");
+
+        if (other.gameObject.tag != "Player" && other.gameObject.tag != "Combustible")
         {
+       
             Destroy(gameObject);
         }
-        
 
+        if (other.gameObject.tag == "Combustible")
+        {
+            Destroy(gameObject);
+            Destroy(obj);
+        }
     }
+
 }

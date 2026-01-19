@@ -9,10 +9,6 @@ public class WandScript : MonoBehaviour
     public bool cooldown;
     public float delayTime = 0.5f;
 
-    private void Start()
-    {
-
-    }
     void Update()
     {
 
