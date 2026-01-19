@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float life = 3;
+
+    void Awake()
     {
-        
+        Destroy(gameObject,life);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

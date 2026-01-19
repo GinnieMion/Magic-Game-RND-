@@ -6,12 +6,20 @@ public class WandScript : MonoBehaviour
     public GameObject SpellPrefab;
     public float spellSpeed = 100;
 
+    private void Start()
+    {
+
+    }
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Mouse0))
+
+        if (enabled)
         {
-            var spell = Instantiate(SpellPrefab, SpellSpawnPoint.position,SpellSpawnPoint.rotation);
-            spell.GetComponent<Rigidbody>().linearVelocity = SpellSpawnPoint.forward * spellSpeed;
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                var spell = Instantiate(SpellPrefab, SpellSpawnPoint.position, SpellSpawnPoint.rotation);
+                spell.GetComponent<Rigidbody>().linearVelocity = SpellSpawnPoint.forward * spellSpeed;
+            }
         }
     }
 }

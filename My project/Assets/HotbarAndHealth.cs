@@ -28,12 +28,6 @@ public class HotbarAndHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //string[] slots = new string[3];
-
-        //slots[0] = "slotone";
-        //slots[1] = "slottwo";
-        //slots[2] = "slotthree";
-        //slots[3] = "slotfour";
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (slot <= 4)
