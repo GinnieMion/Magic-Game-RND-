@@ -1,24 +1,54 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HotbarAndHealth : MonoBehaviour
 {
+
+    // slots
     public GameObject slotone;
     public GameObject slottwo;
     public GameObject slotthree;
     public GameObject slotfour;
     public GameObject selector;
 
-    // slots
+    // slots counter
 
     public GameObject spell;
-    int slot = 0;
+    public int slot = 0;
 
+    // slots end
 
+    // selectors
     public GameObject selector1;
     public GameObject selector2;
     public GameObject selector3;
     public GameObject selector4;
+    // selectors end
+
+
+
+
+
+
+
+    // health
+
+    [SerializeField] private Image HealthbarSprite;
+
+    public void UpdateHealthBar(float maxHealth, float currentHealth)
+    {
+        HealthbarSprite.fillAmount = currentHealth / maxHealth;
+    }
+
+    // health script end
+
+    public void slotFinder()
+    {
+
+    }
+
+
     void Start()
     {
         this.selector.transform.position = slotone.transform.position;

@@ -19,7 +19,7 @@ public class Spell : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (other.gameObject.tag == "Combustible")
+        if (other.gameObject.tag == "Combustible" )
         {
             Destroy(gameObject);
             Destroy(obj);

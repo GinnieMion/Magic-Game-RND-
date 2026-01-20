@@ -9,6 +9,11 @@ public class WandScript : MonoBehaviour
     public bool cooldown;
     public float delayTime = 0.5f;
 
+    // cross-referncing
+
+    public GameObject GameMenu;
+    private HotbarAndHealth Spellscript;
+
     void Update()
     {
 
@@ -28,5 +33,9 @@ public class WandScript : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
         cooldown = false;
+    }
+    public void Findspell()
+    {
+
     }
 }
