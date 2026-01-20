@@ -4,14 +4,20 @@ public class Spell : MonoBehaviour
 {
     public float life = 5;
 
+
+
+
     void Awake()
     {
-        Destroy(gameObject,life);
-     
+        Destroy(gameObject,life); 
     }
+
     private void OnTriggerEnter(Collider other)
     {
+
+
         GameObject obj = GameObject.FindWithTag("Combustible");
+
 
         if (other.gameObject.tag != "Player" && other.gameObject.tag != "Combustible")
         {
