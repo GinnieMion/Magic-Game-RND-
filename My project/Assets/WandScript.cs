@@ -19,6 +19,7 @@ public class WandScript : MonoBehaviour
     public GameObject Fireballuh;
     public GameObject Wateruh;
     public GameObject Earthrockuh;
+    public GameObject Winduh;
 
     private void Awake()
     {
@@ -74,7 +75,7 @@ public class WandScript : MonoBehaviour
         }
         if (slot == 4)
         {
-
+            SpellPrefab = Winduh;
         }
     }
     public void Spellassigner()

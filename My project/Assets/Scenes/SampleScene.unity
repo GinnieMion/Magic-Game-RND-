@@ -33604,6 +33604,7 @@ MonoBehaviour:
   Fireballuh: {fileID: 8937986539255905233, guid: 19a19eb7666baae4789eb696468f54f5, type: 3}
   Wateruh: {fileID: 8359134405912067315, guid: 4554d38cdd0c024409ddf4733853e183, type: 3}
   Earthrockuh: {fileID: 6565395420546291127, guid: a30ae343cdbcd93488cba28749e03f42, type: 3}
+  Winduh: {fileID: 264848799507094982, guid: 653a0b8e286c73b4a911ef40ada73509, type: 3}
 --- !u!1 &1491267330
 GameObject:
   m_ObjectHideFlags: 0
