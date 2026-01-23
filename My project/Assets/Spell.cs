@@ -7,8 +7,9 @@ public class Spell : MonoBehaviour
 {
     public float life = 2f;
     private WandScript Wandscript;
-    public GameObject GameMenu;
     private HotbarAndHealth spellscript;
+    public AudioSource explosion;
+    public GameObject Kaboom;
 
 
 
@@ -28,7 +29,7 @@ public class Spell : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
+        int slot = spellscript.slot;
         {
             
             GameObject obj = GameObject.FindWithTag("Combustible");
@@ -42,6 +43,13 @@ public class Spell : MonoBehaviour
             {
                 Destroy(gameObject);
                 Destroy(obj);
+            }
+
+            if (slot == 1)
+            {
+                Kaboom.SetActive(true);
+                explosion.Play();
+                Kaboom.SetActive(false);
             }
 
             

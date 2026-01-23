@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8937986539255905233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 896.4304, y: 0, z: 762.53906}
+  m_LocalPosition: {x: 900.51, y: 0, z: 766.35}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: -4528420175471302802, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
+  Kaboom: {fileID: 5894463145618809218, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
 --- !u!54 &9185245251229894309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5240,6 +5242,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5482758480007619234}
     m_Modifications:
+    - target: {fileID: -4528420175471302802, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5894463145618809218, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
       propertyPath: m_Name
       value: Explosion
@@ -5250,7 +5256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7984924212023644383, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.932129
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 7984924212023644383, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5258,7 +5264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7984924212023644383, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.6051025
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 7984924212023644383, guid: 45ad6355e967a864cbcc0fd31cc70128, type: 3}
       propertyPath: m_LocalRotation.w

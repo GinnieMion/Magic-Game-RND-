@@ -28,10 +28,13 @@ public class WandScript : MonoBehaviour
 
         if (Hotbar != null)
         {
+            
             spellscript = Hotbar.GetComponent<HotbarAndHealth>();
+            Debug.Log("Script Found.");
+
         }
 
-       
+
     }
 
     void Update()
@@ -51,7 +54,6 @@ public class WandScript : MonoBehaviour
         }
 
     }
-
     public IEnumerator timer()
     {
         yield return new WaitForSeconds(delayTime);
@@ -78,8 +80,4 @@ public class WandScript : MonoBehaviour
             SpellPrefab = Winduh;
         }
     }
-    public void Spellassigner()
-        {
-
-        }
 }

@@ -10,7 +10,6 @@ public class HotbarAndHealth : MonoBehaviour
     public GameObject slottwo;
     public GameObject slotthree;
     public GameObject slotfour;
-    public GameObject selector;
 
     // slots counter
 
@@ -43,15 +42,9 @@ public class HotbarAndHealth : MonoBehaviour
 
     // health script end
 
-    public void slotFinder()
-    {
-
-    }
-
 
     void Start()
     {
-        this.selector.transform.position = slotone.transform.position;
         slot = 1;
         selector1.SetActive(true);
         selector2.SetActive(false);
