@@ -1,32 +1,36 @@
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Spell : MonoBehaviour
 {
-    public float life = 5;
+    public float life = 2f;
     private WandScript Wandscript;
+    public GameObject GameMenu;
+    private HotbarAndHealth spellscript;
 
 
-    void Awake()
+
+    private void Awake()
     {
-        Destroy(gameObject,life);
-
-        {
-        GameObject Wand = GameObject.Find("Wand");
+        GameObject Hotbar = GameObject.Find("GameMenu");
         // finds this stuff
 
-        if (Wand != null)
+        if (Hotbar != null)
         {
-            Wandscript = Wand.GetComponent<WandScript>();
+            spellscript = Hotbar.GetComponent<HotbarAndHealth>();
+
         }
 
-    }
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
+
         {
+            
             GameObject obj = GameObject.FindWithTag("Combustible");
 
             if (other.gameObject.tag != "Player" && other.gameObject.tag != "Combustible")
@@ -38,11 +42,15 @@ public class Spell : MonoBehaviour
             {
                 Destroy(gameObject);
                 Destroy(obj);
-        }
-
-
-
             }
+
+            
         }
+    }
+
+    private void Update()
+    {
+        Destroy(gameObject, life);
+    }
 
 }
